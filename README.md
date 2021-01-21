@@ -18,7 +18,7 @@ To get started, you’ll need your account credentials and Node.js installed (> 
 
 Generate an access token using the APP_ID and APP_SECRET that you see when you create an account on Symbl Platform .You can use tools like postman for this :
 
-![](https://symbltestdata.s3.us-east-2.amazonaws.com/NeerajTest/Nextjs-Symbl-demo+Images/Generate+OAuth+Token.png)
+<img src="/images/Generate-OAuth-Token.png" width=1000>
 
 Update the `auth.json` file in `./src/components/services/auth.json`  with access token that you just generated. 
 
