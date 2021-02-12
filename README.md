@@ -1,8 +1,31 @@
 # Meeting Summary UI Sample App
 
-This is a sample web application built with [React](https://reactjs.org). In this example, [Material-UI](https://material-ui.com) was used as the CSS library.
+[![symbl-react-elements](https://img.shields.io/badge/symbl-react--elements-yellow)](https://docs.symbl.ai/docs/symbl-elements)
 
-This app demonstrate an implementation of GET Request to our Conversation API endpoints to generate a meeting summary UI that fits your unique use cases. 
+Symbl's APIs empower developers to enable: 
+
+- **Real-time** analysis of free-flowing discussions to automatically surface highly relevant summary discussion topics, contextual insights, suggestive action items, follow-ups, decisions, and questions.\
+- **Voice APIs** that makes it easy to add AI-powered conversational intelligence to either [telephony][telephony] or [WebSocket][websocket] interfaces.
+- **Conversation APIs** that provide a REST interface for managing and processing your conversation data.
+- **Summary UI** with a fully customizable and editable reference experience that indexes a searchable transcript and shows generated actionable insights, topics, timecodes, and speaker information.
+
+<hr />
+
+# Create a Summary UI from a Symbl.ai Conversation
+
+<hr />
+
+ * [Setup](#setup)
+ * [Integration](#integration)
+ * [Conclusion](#conclusion)
+ * [Community](#community)
+
+## Setup 
+The first step to getting setup is to [sign up][signup]. 
+
+## Integration 
+
+To integrate a Summary UI into your application, you need to authenticate before running your installed dependencies. The result is a summary of your the results from Symbl.ai API endpoints that you hit. 
 
 ## Authentication
 
@@ -16,13 +39,33 @@ Run `yarn install` or `npm install` on terminal to install the dependencies requ
 
 Run `yarn start` or `npm start` on terminal to run the apps in develepment mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-## References
-Feel free to fork any of the projects here to use on your own and if you have any code improvements, make a pull request and the request will be reviewed by one of our admins.
+## Conclusion 
 
-Refer to our [Official Documentation](docs.symbl.ai) for more details and explanation of Symbl AI's API.
-
-If you have questions, bugs to report or feature suggestions, join our [Dev Community](https://community.symbl.ai).
+If you properly integrated the application, then checkout the screenshot down below. 
 
 ## Screenshot
 
 <img src="/images/meeting-summary-ui.png" width=1000>
+
+## Community 
+
+ If you are having trouble, check out our [API overview](api_overview), or test your endpoints in [Postman](postman). If you have any questions, feel free to reach out to us at devrelations@symbl.ai or through our [Community Slack][slack] or our [developer community][developer_community]. 
+
+This guide is actively developed, and we love to hear from you! Please feel free to [create an issue][issues] or [open a pull request][pulls] with your questions, comments, suggestions and feedback. If you liked our integration guide, please star our repo!
+
+
+This library is released under the [MIT License][license]
+
+[license]: LICENSE.txt
+[telephony]: https://docs.symbl.ai/?&_ga=2.164569275.526040298.1609788827-1505817196.1609788827#voice-api
+[websocket]: https://docs.symbl.ai/?_ga=2.96332568.526040298.1609788827-1505817196.1609788827#ws-voice-api-realtime-websocket
+[developer_community]: https://community.symbl.ai/?_ga=2.134156042.526040298.1609788827-1505817196.1609788827
+[slack]: https://join.slack.com/t/symbldotai/shared_invite/zt-4sic2s11-D3x496pll8UHSJ89cm78CA
+[signup]: https://platform.symbl.ai/?_ga=2.63499307.526040298.1609788827-1505817196.1609788827
+[issues]: https://github.com/
+[pulls]: https://github.com/
+
+[experience_api]: https://docs.symbl.ai/docs/pre-built-ui/experience-api
+[api_overview]: https://docs.symbl.ai/#getting-started
+[postman]: https://docs.symbl.ai/docs/tools/postman/
+[curl]: https://docs.symbl.ai/docs/tools/#curl
