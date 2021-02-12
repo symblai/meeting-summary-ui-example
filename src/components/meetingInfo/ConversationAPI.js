@@ -12,7 +12,7 @@ export const useFetchConversation = (url) => {
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {
-                    'x-api-key': auth.accessToken
+                    'x-api-key': auth.tokens[0].accessToken
                 }
             })
             const data = await response.json()
