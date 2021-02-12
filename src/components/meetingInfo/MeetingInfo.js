@@ -10,6 +10,7 @@ import { useFetch } from './TopicsAPI'
 import { useFetchMembers } from './MembersAPI'
 import { Members } from './Members'
 import { useFetchConversation } from './ConversationAPI'
+require('dotenv').config()
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,11 +33,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MeetingInfo() {
     const classes = useStyles()
-    const conversationid = 5427431447986176
+    const conversationid = process.env.REACT_APP_SYMBL_CONVERSATION_ID || 5427431447986176
+    
     const datas = useFetch(`https://api.symbl.ai/v1/conversations/${conversationid}/insights`)
 
     const members = useFetchMembers(`https://api.symbl.ai/v1/conversations/${conversationid}`)
-
+    
     const conversations = useFetchConversation(`https://api.symbl.ai/v1/conversations/${conversationid}`)
 
     return (

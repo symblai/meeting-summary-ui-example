@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/styles'
 import { Typography, Box } from '@material-ui/core'
 import InsightCard from './InsightsCard'
 import { useFetch } from './InsightsAPI'
+require('dotenv').config()
+
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -15,7 +17,7 @@ const useStyles = makeStyles(() => ({
 
 export default function InsightsList({title}){
     const classes = useStyles()
-    const conversationid = 5427431447986176
+    const conversationid = process.env.REACT_APP_SYMBL_CONVERSATION_ID || 5427431447986176
     const datas = useFetch(`https://api.symbl.ai/v1/conversations/${conversationid}/insights`)
 
     return (
